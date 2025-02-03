@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8ea97db0e.js" crossorigin="anonymous"></script>
+    <title>Champions</title>
+    <style>
+        .banner, .sedes, .form {
+            position: relative;
+            overflow: hidden;
+        }
+        .banner__overlay, .sedes__overlay, .form-overlay {
+            position: relative;
+            z-index: 1;
+        }
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box conteiner">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <i class="fa-solid fa-bars"></i>
+            <div class="conte__logo">
+                <img src="img/logo.png" alt="logo de athletic Perú">
+            </div>
+            <nav class="nav"> 
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Juega</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Torneos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Mira en Fifa+</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Resultados y Calendario</a></li>
+                </ul>
+            </nav>
+            <div class="conte__login">
+                <div class="login-acceso">
+                    <input type="text" placeholder="Buscar" id="buscar">
+                    <label for="buscar"><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
+                <a href="#formulario" title="Registrate" class="acesso">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>        
+    </header>
+
+    <section class="banner" id="inicio">
+        <img src="img/logo.png" alt="Banner background" class="background-image">
+        <div class="banner__overlay">
+            <div class="box conte__banner">
+                <h2>Prepárate para la Copa Mundial de Beach Soccer de la FIFA Seychelles 2025™</h2>
+                <p>Todo listo para la próxima entrega de esta emocionante competición con las últimas noticias desde las Seychelles, mientras la arena se prepara para la batalla</p>
+                <a href="https://www.plus.fifa.com/es/showcase/044ea657-380e-47e9-8bdb-10a70f72e864">Descubre <i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <aside class="sedes">
+        <img src="img/xd.webp" alt="Sedes background" class="background-image">
+        <div class="sedes__overlay">
+            <h3>LA FINAL Rodrigo hace historia con Brasil </h3>
+            <p>Brasil se había quedado con cinco títulos mundiales en fútbol, futsal y fútbol playa. La Seleção de fútbol playa se emocionó cuando Romario -que fue su estrella en la edición inaugural en Copacabana en 2005- se presentó en Dubai para animarles en el partido decisivo. Sería el sucesor de "Shortie" su héroe. La habilidad de Rodrigo fue responsable de la expulsión de Leandro Casapieri, mientras que él anotó un triplete y dio una asistencia en una de las mejores actuaciones individuales de todos los tiempos. Brasil tenía por fin una sexta estrella.</p>
+        </div>
+    </aside>
+
+    <div class="cate-conteiner" id="categorias">
+        <h2>NOTICIAS DE LA COPA MUNDIAL DE BEACH SOCCER</h2>
+        <div class="grid-container">
+            <div class="item">
+                <img src="img/imagen 2.webp" width="100%" height="100%" alt="imagen01">
+                <h3>Brasil hace historia e Italia e Irán completan el podio</h3>
+                <p>Brasil conquistó la Copa Mundial de Beach Soccer de la FIFA con sus porteros goleadores, sus estrellas mágicas y sus remontadas alocadas.</p>
+            </div>
+            <div class="item">
+                <img src="img/3.webp" width="100%" height="100%" alt="imagen02">
+                <h3>Máximos goleadores en la historia de la Copa Mundial de Fútbol Playa de la FIFA</h3>
+                <p>Consulta los máximos goleadores históricos de la Copa Mundial de Beach Soccer de la FIFA y los máximos goleadores de cada edición del torneo</p>
+            </div>
+            <div class="item">
+                <img src="img/4.webp" width="100%" height="100%" alt="imagen03">
+                <h3>Una jornada de historia para los porteros en el Mundial de Beach Soccer</h3>
+                <p>Irán e Italia terminaron en lo más alto de sus grupos en un día en el que Hamid Behzadpour, Leandro Casapieri, Austin Collier, Humaid Jamal y Seyed Mirjalili deslumbraron</p>
+            </div>
+            <div class="item">
+                <img src="img/5.webp" width="100%" height="100%" alt="imagen04">
+                <h3>Previa de la 2ª jornada: Brasil, Japón y Portugal entran en acción</h3>
+                <p>Colombia-Japón, Portugal-México, Senegal-Bielorrusia y Brasil-Omán figuran en el menú de la segunda jornada de EAU 2024 Dubai.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="form">
+        <img src="img/uwu.jpg" alt="Form background" class="background-image">
+        <div class="form-overlay" id="formulario">
+            <h2>Registrate ya!</h2>
+            <form class="formulario">
+                <label> Nombre:
+                    <input type="text" name="nombre" id="nombre" required placeholder="Bryan Estiven">
+                </label>
+                <label> Apellido:
+                    <input type="text" name="apellido" id="apellido" required placeholder="Vargas Hinostroza">
+                </label>
+                <label> Telefono:
+                    <input type="number" name="categoria" id="categoria" required placeholder="+51 97*******">
+                </label>
+                <label>Correo Electronico
+                    <input type="email" name="correo" id="correo" required placeholder="ejem@gmail.com">
+                </label>
+                <label>Contraseña:
+                    <input type="password" name="dirce" id="direc" required placeholder="***********">
+                </label>
+                <button>Registrar <i class="fa-solid fa-pen-to-square"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> &copy; Tarea 03 - Vargas Hinostroza Bryan - Maquetacion web </p>
+        </div>
+    </footer>
+</body>
+</html>
